@@ -1,0 +1,25 @@
+#facebook [role="banner"],
+#facebook [role="banner"] + div,
+#facebook [role="main"]{
+  background-color: hsl(0, 0%, 10%);
+}
+
+#facebook [aria-label="New message"] > div{
+  background-color: hsl(0, 0%, 20%);
+}
+
+#facebook [id^="placeholder"],
+#facebook [aria-label="Conversation List"] span,
+#facebook [aria-label="New message"] [role="presentation"],
+#facebook h1, #facebook h2, #facebook h3, #facebook h4, #facebook h5, #facebook h6, #facebook abbr{
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+#facebook [role="banner"] a path{
+  fill: white
+}
+
+#facebook div > div > div > div:nth-child(1) input{
+  background-color: hsl(0,0%, 80%);
+}
