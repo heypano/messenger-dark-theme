@@ -8,7 +8,11 @@
   background-color: hsl(0, 0%, 20%);
 }
 
-.uiScrollableAreaContent div:not([data-tooltip-content]),
+#facebook a > div,
+#facebook [data-lynx-mode],
+.xuiScrollableAreaContent div:not([data-tooltip-content]),
+#facebook [style^="background-image"]+div,
+#facebook .uiScrollableAreaWrap:nth-of-type(1),
 #facebook [id^="placeholder"],
 #facebook [aria-label="Conversation List"] span,
 #facebook [aria-label="New message"] [role="presentation"],
@@ -18,13 +22,18 @@
 }
 
 #facebook path{
-  fill: white
+  fill: white;
 }
 
 #facebook div > div > div > div:nth-child(1) input{
   background-color: hsl(0,0%, 80%);
 }
 
-#facebook [data-tooltip-content]{
-  color:i
+#facebook [data-lynx-mode] > div{
+  background: hsl(0,0%,30%);
+  border-radius: 30px;
 }
+
+/*#facebook [data-tooltip-content]{*/
+/*  color:white;*/
+/*}*/
